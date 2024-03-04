@@ -1,0 +1,151 @@
+/* Existing styles */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the green box header */
+.green-box-header {
+    background-color: #436740;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+/* Style for the header title */
+.header-title {
+    color: white;
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+/* Style for the header links */
+.header-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Style for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style for the yellow box */
+.yellow-box {
+    background-color: #FFF580;
+    height: 200px; /* Adjust height as needed */
+}
+
+/* New styles for the text */
+.text-container {
+    padding: 20px;
+}
+
+.main-heading {
+    font-size: 36px; /* Adjust font size as needed */
+}
+
+.description {
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+/* Style for the promo box */
+.promo-box {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.promo-box h2 {
+    text-transform: uppercase;
+    color: #C3801B; /* Adjust color as needed */
+}
+
+.deal {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.deal h3 {
+    font-size: 24px;
+}
+
+.deal p {
+    font-size: 16px;
+}
+
+.code {
+    font-weight: bold;
+}
+
+.profile-info {
+    background-color: red;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #C3801B;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
