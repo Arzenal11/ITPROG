@@ -1,0 +1,297 @@
+/* Existing styles */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the green box header */
+.green-box-header {
+    background-color: #436740;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+/* Style for the header title */
+.header-title {
+    color: white;
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+/* Style for the header links */
+.header-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Style for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* New styles for the text */
+.text-container {
+    padding: 20px;
+}
+
+.main-heading {
+    font-size: 36px; /* Adjust font size as needed */
+}
+
+.description {
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+.profile-info {
+    background-color: red;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Style for the top dropdowns */
+.top-container-dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-dropdown {
+    margin: auto;
+    display: inline-block;
+}
+
+.top-box {
+    margin: auto;
+    margin-top: 10px;
+    background-color: red;
+    height: 70px;
+    width: 200px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.top-dropbtn {
+    margin-top: 10px;
+    background-color: red;
+    height: 70px;
+    width: 200px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.top-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    z-index: 1;
+}
+
+.top-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.top-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.top-dropdown:hover .top-dropdown-content {
+    display: block;
+}
+
+/* Style for Select header */
+
+.select-header-container {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/* Style for main container */
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+/* Style for Calendar Background */
+
+.cal-background {
+    width: 70%;
+    height: 600px;
+    background: rgb(255, 255, 161);
+}
+
+/* START OF CALENDAR */
+
+.month-header {
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.cal-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cal-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+
+    &.today{
+        box-shadow:inset 0px 0px 0px 2px #0a3d62;
+    }
+      
+    &:first-child{
+        grid-column:3;
+    }
+      
+    &:hover{
+        background:#eee;
+    }
+      
+    &:focus{
+        background:#0a3d62;
+        color:#fff;
+        font-weight:600;
+    }
+}
+
+/* Style for Available Rooms Portion */
+
+.room-container {
+    width: 25%;
+    margin-left: 20px;
+    height: 600px;
+    background: red;
+}
+
+.room-header {
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.room-box {
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 161);
+    height: 150px;
+    width: 300px;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.room-text-title {
+    color: black;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.room-text-room {
+    color: black;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.room-text-available {
+    color: green;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.room-text-notavailable {
+    color: rgb(186, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #C3801B;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
